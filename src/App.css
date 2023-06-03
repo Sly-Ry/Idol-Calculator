@@ -1,0 +1,42 @@
+:root {
+  --darkshade: rgba(0, 0, 0, 0.349);
+  --bodyBackground: rgb(255, 255, 255);
+  --bg-top: rgb(124, 77, 255);
+  --bg-bottom: rgb(204, 156, 172);
+  --color1: rgb(228, 139, 174);
+  --color2: rgb(149, 117, 205);
+  --color4: rgb(209, 196, 233);
+  --screenColor: rgba(255, 255, 255, 0.973);
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background: var(--bodyBackground);
+  background-image: linear-gradient(
+    30deg, 
+    var(--bg-bottom) 20%,
+    var(--bg-top) 100%
+  )
+}
+
+.btn {
+  background-color: var(--color4);
+  color: var(--color2);
+  height: 65px;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.App {
+  padding-top: 20vh;
+}
+
+.calculator {
+  /* border: 3px solid var(--color1); */
+  background-color: var(--darkshade);
+}
+
+.calculator input {
+  background: var(--screenColor);
+}

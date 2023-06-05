@@ -9,7 +9,6 @@ function App() {
           mx-auto 
           my-auto 
           w-100 
-          rounded 
           p-2 
           d-grid
         ' 
@@ -20,9 +19,7 @@ function App() {
           id=""
           placeholder="evaluate" 
           className='
-            form-control 
-            form-control-lg 
-            fs-3 
+            fs-1 
             text-end 
             border-0 
             rounded
@@ -32,7 +29,8 @@ function App() {
           required
           disabled
         ></input>
-        <div className='row row-cols-4 g-2 mt-1'>
+        <div className='bar'></div>
+        <div className='row row-cols-4 g-2 mt-2 p-3 pt-2'>
           <div className='col'>
             <button className='btn w-100 shadow-none'>C</button>
           </div>
@@ -49,7 +47,7 @@ function App() {
             <button className='btn w-100 shadow-none'>8</button>
           </div>
           <div className='col'>
-            <button className='btn w-100 shadow-none'>9</button>
+            <button className='btn w-100 shadow-none '>9</button>
           </div>
           <div className='col'>
             <button className='btn w-100 shadow-none'>x</button>
@@ -67,13 +65,13 @@ function App() {
             <button className='btn w-100 shadow-none'>-</button>
           </div>
           <div className='col'>
-            <button className='btn w-100'>3</button>
+            <button className='btn w-100 shadow-none'>1</button>
           </div>
           <div className='col'>
             <button className='btn w-100 shadow-none'>2</button>
           </div>
           <div className='col'>
-            <button className='btn w-100 shadow-none'>1</button>
+            <button className='btn w-100 shadow-none'>3</button>
           </div>
           <div className='col'>
             <button className='btn w-100 shadow-none'>+</button>

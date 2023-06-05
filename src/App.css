@@ -1,12 +1,18 @@
 :root {
-  --darkshade: rgba(0, 0, 0, 0.349);
+  --darkshade: rgba(0, 0, 0, 0.35);
   --bodyBackground: rgb(255, 255, 255);
   --bg-top: rgb(124, 77, 255);
   --bg-bottom: rgb(204, 156, 172);
   --color1: rgb(228, 139, 174);
+  --color1f: rgba(228, 139, 175, 0.753);
   --color2: rgb(149, 117, 205);
   --color4: rgb(209, 196, 233);
-  --screenColor: rgba(16, 39, 100, 0.973);
+  --color4f: rgba(209, 196, 233, 0.445);
+  --borderColor: rgba(124, 77, 255, 0.336);
+  --screenColor: rgba(0, 0, 0, 0.5);
+  --numberColor: rgba(255, 255, 255, 0.623);
+  --equationColor: rgba(0, 0, 0, 0.55);
+  --cacColor: rgba(209, 196, 233, 0.678);
 }
 
 body {
@@ -20,36 +26,13 @@ body {
   );
 }
 
-.bar {
-  background-color: rgba(255, 255, 255, 0.082);
-  margin: auto;
-  width: 96%;
-  height: 0px;
-  padding: 5px;
-  border-radius: 5px;
-}
-
-.btn {
-  background-color: var(--color4);
-  color: var(--color2);
-  height: 65px;
-  padding-top: 2px;
-  font-size: 2em;
-  font-weight: bold;
-  transition: all 0.7s ease-in-out;
-}
-
-.btn:hover {
-  color: var(--color2) !important;
-  text-decoration: none;
-}
 
 .App {
   padding-top: 20vh;
 }
 
 .calculator {
-  /* border: 3px solid var(--color1); */
+  /* border: 10px solid var(--borderColor); */
   background-color: var(--darkshade); 
   border-radius: 20px;
 }
@@ -59,4 +42,46 @@ body {
   padding-right: 15px;
   width: 80%;
   height: 70px;
+  background-color: var(--screenColor);
+  color: var(--color1);
+}
+
+.bar {
+  background-color: var(--color2);
+  margin: auto;
+  width: 96%;
+  height: 0px;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.btn {
+  background-color: transparent;
+  color: var(--numberColor);
+  border-radius: 4px;
+  height: 65px;
+  padding-top: 2px;
+  font-size: 2em;
+  transition: all 0.4s ease-in-out;
+}
+
+
+.wa { 
+  background-color: var(--color1f);
+  color: var(--equationColor);
+  font-weight: bold;
+}
+
+.cac {
+  background-color: var(--cacColor);
+  color: var(--equationColor);
+}
+
+.wa:hover, .cac:hover {
+  color: var(--equationColor);
+}
+
+.btn:hover {
+  color: var(--numberColor) !important;
+  text-decoration: none;
 }

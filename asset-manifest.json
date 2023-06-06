@@ -1,15 +1,16 @@
 {
   "files": {
-    "main.css": "/Idol-Calculator/static/css/main.a20dbf14.css",
-    "main.js": "/Idol-Calculator/static/js/main.7cdfc50b.js",
+    "main.css": "/Idol-Calculator/static/css/main.0fa9af8d.css",
+    "main.js": "/Idol-Calculator/static/js/main.7be5e4f9.js",
     "static/js/787.a174f9e5.chunk.js": "/Idol-Calculator/static/js/787.a174f9e5.chunk.js",
+    "static/media/Bts-logo-32027.png": "/Idol-Calculator/static/media/Bts-logo-32027.7e1a45ad9eb368a7f694.png",
     "index.html": "/Idol-Calculator/index.html",
-    "main.a20dbf14.css.map": "/Idol-Calculator/static/css/main.a20dbf14.css.map",
-    "main.7cdfc50b.js.map": "/Idol-Calculator/static/js/main.7cdfc50b.js.map",
+    "main.0fa9af8d.css.map": "/Idol-Calculator/static/css/main.0fa9af8d.css.map",
+    "main.7be5e4f9.js.map": "/Idol-Calculator/static/js/main.7be5e4f9.js.map",
     "787.a174f9e5.chunk.js.map": "/Idol-Calculator/static/js/787.a174f9e5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a20dbf14.css",
-    "static/js/main.7cdfc50b.js"
+    "static/css/main.0fa9af8d.css",
+    "static/js/main.7be5e4f9.js"
   ]
 }

@@ -85,7 +85,9 @@ function App() {
             <button className='btn w-100 shadow-lg'>0</button>
           </div>
           <div className='col-6'>
-            <button className='btn w-100 shadow-lg equals'>=</button>
+            <button className='btn w-100 shadow-lg equals'>
+              <img width="50" height="60" src={require("./images/Bts-logo-32027.png")} alt="themed-equal-signs"></img>
+            </button>
           </div>
         </div>
       </div>

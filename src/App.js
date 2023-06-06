@@ -79,13 +79,13 @@ function App() {
             <button className='btn w-100 shadow-lg wa'>+</button>
           </div>
           <div className='col'>
-            <button className='btn w-100 shadow-lg'>.</button>
+            <button className='btn w-100 shadow-lg cac'>.</button>
           </div>
           <div className='col'>
             <button className='btn w-100 shadow-lg'>0</button>
           </div>
           <div className='col-6'>
-            <button className='btn w-100 shadow-lg'>=</button>
+            <button className='btn w-100 shadow-lg equals'>=</button>
           </div>
         </div>
       </div>

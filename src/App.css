@@ -4,15 +4,14 @@
   --bg-top: rgb(124, 77, 255);
   --bg-bottom: rgb(204, 156, 172);
   --color1: rgb(228, 139, 174);
-  --color1f: rgba(228, 139, 175, 0.753);
   --color2: rgb(149, 117, 205);
-  --color4: rgb(209, 196, 233);
-  --color4f: rgba(209, 196, 233, 0.445);
+  --color3: rgb(209, 196, 233);
   --borderColor: rgba(124, 77, 255, 0.336);
   --screenColor: rgba(0, 0, 0, 0.5);
   --numberColor: rgba(255, 255, 255, 0.623);
+  --btn-color: rgba(228, 139, 175, 0.753);
   --equationColor: rgba(0, 0, 0, 0.55);
-  --cacColor: rgba(209, 196, 233, 0.678);
+  --cacColor: rgba(209, 196, 233, 0.418);
 }
 
 body {
@@ -24,11 +23,7 @@ body {
     var(--bg-bottom) 20%,
     var(--bg-top) 100%
   );
-}
-
-
-.App {
-  padding-top: 20vh;
+  overflow: hidden;
 }
 
 .calculator {
@@ -65,11 +60,21 @@ body {
   transition: all 0.4s ease-in-out;
 }
 
+.btn:hover {
+  background-color: var(--btn-color);
+  color: var(--numberColor);
+  text-decoration: none;
+}
+
 
 .wa { 
-  background-color: var(--color1f);
+  background-color: var(--btn-color);
   color: var(--equationColor);
   font-weight: bold;
+}
+
+.wa:hover{
+  color: var(--equationColor);
 }
 
 .cac {
@@ -77,11 +82,15 @@ body {
   color: var(--equationColor);
 }
 
-.wa:hover, .cac:hover {
+.cac:hover {
+  background-color: var(--color3);
   color: var(--equationColor);
 }
 
-.btn:hover {
-  color: var(--numberColor) !important;
-  text-decoration: none;
+.equals {
+  background-color: var(--borderColor);
+}
+
+.equals:hover {
+  background-color: var(--bg-top);
 }

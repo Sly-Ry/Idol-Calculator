@@ -41,6 +41,10 @@ body {
   color: var(--color1);
 }
 
+input::placeholder {
+  color: white;
+}
+
 .bar {
   background-color: var(--color2);
   margin: auto;

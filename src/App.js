@@ -1,7 +1,61 @@
-
+import { useState } from 'react';
 import './App.css';
 
 function App() {
+
+  const [expression, setExpression] = useState('');
+
+  const ops = ['/', '*', '+', '-', '.'];
+
+  const number = (e) => {
+    const number = e.target.textContent;
+      
+    if(expression === "0") {
+      setExpression(number);
+    }
+    else {
+      setExpression(expression + number);
+    }
+  };
+
+  const operator = (e) => {
+    let operator = '';
+
+    if(e.target.textContent === 'x'){
+      operator = '*'
+    }
+    else {
+      operator = e.target.textContent;
+    }
+   
+    if(
+      ops.includes(operator) && expression === '' ||
+      ops.includes(operator) && ops.includes(expression.slice(-1))
+    ) {
+      return;
+    }
+
+    setExpression(expression + operator);
+  };
+
+  const calculate = () => {
+    setExpression(eval(expression).toString());
+  };
+
+  const allClear = () => {
+    setExpression('0');
+  }
+
+  const clear = () => {
+
+    setExpression(prev => 
+      prev
+        .split('')
+        .slice(0, prev.length - 1)
+        .join('')
+    );
+  }
+
 
   return (
     <div className="App d-grid">
@@ -20,72 +74,72 @@ function App() {
           type="text" 
           name="" 
           id=""
-          placeholder="evaluate" 
+          placeholder="0" 
           className='
             fs-1 
             text-end
             border-0
             shadow-none
           ' 
-          value="0"
+          value={expression}
           required
           disabled
         ></input>
         <div className='bar'></div>
         <div className='row row-cols-4 g-2 mt-2 p-3 pt-2'>
           <div className='col'>
-            <button className='btn w-100 shadow-lg cac'>C</button>
+            <button onClick={clear} className='btn w-100 shadow-lg cac'>C</button>
           </div>
           <div className='col-6'>
-            <button className='btn w-100 shadow-lg cac'>AC</button>
+            <button onClick={allClear} className='btn w-100 shadow-lg cac'>AC</button>
           </div>
           <div className='col'>
-            <button className='btn w-100 shadow-lg wa'>/</button>
+            <button onClick={operator} className='btn w-100 shadow-lg wa'>/</button>
           </div>
           <div className='col'>
-            <button className='btn w-100 shadow-lg'>7</button>
+            <button onClick={number} className='btn w-100 shadow-lg'>7</button>
           </div>
           <div className='col'>
-            <button className='btn w-100 shadow-lg'>8</button>
+            <button onClick={number} className='btn w-100 shadow-lg'>8</button>
           </div>
           <div className='col'>
-            <button className='btn w-100 shadow-lg '>9</button>
+            <button onClick={number} className='btn w-100 shadow-lg '>9</button>
           </div>
           <div className='col'>
-            <button className='btn w-100 shadow-lg wa'>x</button>
+            <button onClick={operator} className='btn w-100 shadow-lg wa'>x</button>
           </div>
           <div className='col'>
-            <button className='btn w-100 shadow-lg'>4</button>
+            <button onClick={number} className='btn w-100 shadow-lg'>4</button>
           </div>
           <div className='col'>
-            <button className='btn w-100 shadow-lg'>5</button>
+            <button onClick={number} className='btn w-100 shadow-lg'>5</button>
           </div>
           <div className='col'>
-            <button className='btn w-100 shadow-lg'>6</button>
+            <button onClick={number} className='btn w-100 shadow-lg'>6</button>
           </div>
           <div className='col'>
-            <button className='btn w-100 shadow-lg wa'>-</button>
+            <button onClick={operator} className='btn w-100 shadow-lg wa'>-</button>
           </div>
           <div className='col'>
-            <button className='btn w-100 shadow-lg'>1</button>
+            <button onClick={number} className='btn w-100 shadow-lg'>1</button>
           </div>
           <div className='col'>
-            <button className='btn w-100 shadow-lg'>2</button>
+            <button onClick={number} className='btn w-100 shadow-lg'>2</button>
           </div>
           <div className='col'>
-            <button className='btn w-100 shadow-lg'>3</button>
+            <button onClick={number} className='btn w-100 shadow-lg'>3</button>
           </div>
           <div className='col'>
-            <button className='btn w-100 shadow-lg wa'>+</button>
+            <button onClick={operator} className='btn w-100 shadow-lg wa'>+</button>
           </div>
           <div className='col'>
-            <button className='btn w-100 shadow-lg cac'>.</button>
+            <button onClick={operator} className='btn w-100 shadow-lg cac'>.</button>
           </div>
           <div className='col'>
-            <button className='btn w-100 shadow-lg'>0</button>
+            <button onClick={number} className='btn w-100 shadow-lg'>0</button>
           </div>
           <div className='col-6'>
-            <button className='btn w-100 shadow-lg equals'>
+            <button onClick={calculate} className='btn w-100 shadow-lg equals'>
               <img width="50" height="60" src={require("./images/Bts-logo-32027.png")} alt="themed-equal-signs"></img>
             </button>
           </div>

@@ -6,6 +6,7 @@ import App from './BTS1/App';
 
 
 const bts = ReactDOM.createRoot(document.getElementById('bts'));
+
 bts.render(
   <React.StrictMode>
     <Dropdown />

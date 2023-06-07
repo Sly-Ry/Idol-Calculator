@@ -36,7 +36,7 @@ body {
   height: 900px;
   top: 20%;
   left: 50%;
-  margin-top: -100px; /* Negative half of height. */
+  margin-top: -150px; /* Negative half of height. */
   margin-left: -260px; /* Negative half of width. */
   opacity: .3;
   z-index: -1;

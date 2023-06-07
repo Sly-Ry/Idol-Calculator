@@ -2,14 +2,14 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import Dropdown from './Dropdown';
-import App from './BTS1/App';
+import Bts1 from './pages/BTS1/Bts1';
 
 
-const bts = ReactDOM.createRoot(document.getElementById('bts'));
+const root = ReactDOM.createRoot(document.getElementById('root'));
 
-bts.render(
+root.render(
   <React.StrictMode>
     <Dropdown />
-    <App />
+    <Bts1 />
   </React.StrictMode>
 );

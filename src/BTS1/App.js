@@ -59,7 +59,7 @@ function App() {
 
   return (
     <div className="App d-grid">
-      <img className='bg-img' src={require("./images/Bts-logo-32027.png")} alt="themed-equal-signs"></img>
+      <img className='bg-img' src={require("../images/Bts-logo-32027.png")} alt="themed-equal-signs"></img>
       <div 
         className='
           calculator
@@ -146,7 +146,7 @@ function App() {
           </div>
           <div className='col-6'>
             <button onClick={calculate} className='btn w-100 shadow-lg equals'>
-              <img width="50" height="60" src={require("./images/Bts-logo-32027.png")} alt="themed-equal-signs"></img>
+              <img width="50" height="60" src={require("../images/Bts-logo-32027.png")} alt="themed-equal-signs"></img>
             </button>
           </div>
         </div>

@@ -62,7 +62,7 @@ function App() {
       <img className='bg-img' src={require("./images/Bts-logo-32027.png")} alt="themed-equal-signs"></img>
       <div 
         className='
-          calculator 
+          calculator
           mx-auto 
           my-auto 
           w-100 
@@ -77,6 +77,7 @@ function App() {
           id=""
           placeholder="0" 
           className='
+            bg-dark
             fs-1 
             text-end
             border-0

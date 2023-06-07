@@ -1,12 +1,13 @@
 :root {
-  --darkshade: rgba(0, 0, 0, 0.45);
+  
   --bodyBackground: rgb(255, 255, 255);
   --bg-top: rgb(124, 77, 255);
   --bg-bottom: rgb(204, 156, 172);
   --color1: rgb(228, 139, 174);
   --color2: rgb(149, 117, 205);
   --color3: rgb(209, 196, 233);
-  --borderColor: rgba(124, 77, 255, 0.336);
+  /* --borderColor: rgba(124, 77, 255, 0.336); */
+  --calculatorColor: rgba(17, 0, 80, 0.55);
   --screenColor: rgba(0, 0, 0, 0.76);
   --numberColor: rgba(255, 255, 255, 0.623);
   --btn-color: rgba(228, 139, 175);
@@ -36,15 +37,15 @@ body {
   height: 900px;
   top: 20%;
   left: 50%;
-  margin-top: -150px; /* Negative half of height. */
-  margin-left: -260px; /* Negative half of width. */
+  margin-top: -150px;
+  margin-left: -260px;
   opacity: .3;
   z-index: -1;
 }
 
 .calculator {
   /* border: 10px solid var(--borderColor); */
-  background-color: var(--darkshade); 
+  background-color: var(--calculatorColor); 
   border-radius: 20px;
 }
 
@@ -53,7 +54,6 @@ body {
   padding-right: 15px;
   width: 87%;
   height: 70px;
-  background-color: var(--screenColor);
   color: var(--color1);
 }
 

@@ -77,13 +77,16 @@ function App() {
           id=""
           placeholder="0" 
           className='
+            form-control
+            form-control-lg
             bg-dark
             fs-1 
             text-end
             border-0
             rounded
             shadow-none
-          ' 
+          '
+          style={{opacity: "1"}} 
           value={expression}
           required
           disabled

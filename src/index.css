@@ -1,13 +1,105 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(
+    30deg, 
+    var(--bg-bottom) 20%,
+    var(--bg-top) 100%
+  );
+  overflow: hidden;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.App {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.App .bg-img {
+  position: absolute;
+  width: 100%;
+  max-width: 500px;
+  height: 100%;
+  right: 5px;
+  bottom: 0px;
+  opacity: .32;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.calculator {
+  /* border: 10px solid var(--borderColor); */
+  margin: auto;
+  background-color: var(--calculatorColor); 
+  border-radius: 20px;
+}
+
+.calculator input {
+  margin: 15px auto;
+  padding-right: 15px;
+  width: 87%;
+  height: 70px;
+  opacity: 1;
+  background: var(black);
+  color: var(--color1);
+}
+
+input::placeholder {
+  color: white;
+}
+
+.bar {
+  background-color: var(--color2);
+  margin: auto;
+  width: 96%;
+  height: 0px;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.btn {
+  background-color: transparent;
+  color: var(--numberColor);
+  border-radius: 4px;
+  height: 65px;
+  padding-top: 2px;
+  font-size: 2em;
+  transition: all 0.4s ease-in-out;
+}
+
+.btn:hover {
+  background-color: var(--btn-color);
+  color: var(--numberColor);
+  text-decoration: none;
+}
+
+
+.wa { 
+  background-color: var(--btn-color);
+  color: var(--equationColor);
+  font-weight: bold;
+}
+
+.wa:hover{
+  color: var(--equationColor);
+}
+
+.cac {
+  background-color: var(--cacColor);
+  color: var(--equationColor);
+}
+
+.cac:hover {
+  background-color: var(--color3);
+  color: var(--equationColor);
+}
+
+.equals {
+  background-color: var(--borderColor);
+}
+
+.equals:hover {
+  background-color: var(--bg-top);
 }

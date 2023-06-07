@@ -119,10 +119,11 @@ p {
   right: 20px;
   overflow: hidden;
   cursor: pointer;
-  color: rgb(255, 255, 255);
+  
 }
 
 .menu-trigger i.active {
+  color: rgb(238, 202, 0);
   opacity: 1;
   transform: rotate(90deg);
   transition: .5 ease;
@@ -132,6 +133,7 @@ p {
   opacity: .8;
   transform: rotate(0deg);
   transition: .5 ease;
+  color: rgb(255, 255, 255);
 }
 
 .drop-menu {
@@ -143,7 +145,7 @@ p {
   /* padding-top: 130px; */
   width: 190px;
   display: flex;
-  justify-content: start;
+  justify-content: flex-start;
   align-items: center;
   height: 200px;
   overflow-y: scroll;

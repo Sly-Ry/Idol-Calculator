@@ -59,6 +59,7 @@ function App() {
 
   return (
     <div className="App d-grid">
+      <img className='bg-img' src={require("./images/Bts-logo-32027.png")} alt="themed-equal-signs"></img>
       <div 
         className='
           calculator 
@@ -79,6 +80,7 @@ function App() {
             fs-1 
             text-end
             border-0
+            rounded
             shadow-none
           ' 
           value={expression}

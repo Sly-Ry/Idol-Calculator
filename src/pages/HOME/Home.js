@@ -1,7 +1,22 @@
 import { useState } from 'react';
-import './home.css';
 
-function Home() {
+export function Home() {
+
+  document.documentElement.style.setProperty('--bg-top', 'rgb(172, 172, 172)');
+  document.documentElement.style.setProperty('--bg-bottom', 'rgb(255, 255, 255)');
+  document.documentElement.style.setProperty('--outputColor', 'rgb(255, 255, 255)');
+  document.documentElement.style.setProperty('--barColor', 'rgb(99, 99, 99)');
+  document.documentElement.style.setProperty('--calculatorColor', 'rgba(73, 73, 73, 0.55)');
+  document.documentElement.style.setProperty('--screenColor', 'rgba(0, 0, 0, 0.76)');
+  document.documentElement.style.setProperty('--numberColor', 'rgb(255, 255, 255)');
+  document.documentElement.style.setProperty('--btn-color', 'rgba(139, 203, 228)');
+  document.documentElement.style.setProperty('--equationColor', 'rgba(0, 0, 0, 0.55)');
+  document.documentElement.style.setProperty('--cacColor', 'rgba(49, 49, 49, 0.418)');
+  document.documentElement.style.setProperty('--cacHoverColor', 'rgb(56, 56, 56)');
+  document.documentElement.style.setProperty('--trigColorAct', 'rgb(0, 0, 0)');
+  document.documentElement.style.setProperty('--trigColorInact', 'rgba(145, 124, 6))');
+  document.documentElement.style.setProperty('--dropMenuBg', 'rgba(209, 209, 209, 0.986)');
+  document.documentElement.style.setProperty('--scrollColor', 'rgba(5, 70, 16, 0.432)');
 
   const [expression, setExpression] = useState('');
 
@@ -154,5 +169,3 @@ function Home() {
     </div>
   );
 }
-
-export default Home;

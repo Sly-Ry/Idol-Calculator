@@ -1,8 +1,24 @@
 import { useState } from 'react';
 import './bts1.css';
 
-function Bts1() {
+export function Bts1() {
 
+  document.documentElement.style.setProperty('--bg-top', 'rgb(124, 77, 255)');
+  document.documentElement.style.setProperty('--bg-bottom', 'rgb(204, 156, 172)');
+  document.documentElement.style.setProperty('--outputColor', 'rgb(228, 139, 174)');
+  document.documentElement.style.setProperty('--barColor', 'rgb(149, 117, 205)');
+  document.documentElement.style.setProperty('--calculatorColor', 'rgba(17, 0, 80, 0.55)');
+  document.documentElement.style.setProperty('--screenColor', 'rgba(0, 0, 0, 0.76)');
+  document.documentElement.style.setProperty('--numberColor', 'rgba(255, 255, 255, 0.623)');
+  document.documentElement.style.setProperty('--btn-color', 'rgba(228, 139, 175)');
+  document.documentElement.style.setProperty('--equationColor', 'rgba(0, 0, 0, 0.55)');
+  document.documentElement.style.setProperty('--cacColor', 'rgba(209, 196, 233, 0.418)');
+  document.documentElement.style.setProperty('--cacHoverColor', 'rgb(209, 196, 233)');
+  document.documentElement.style.setProperty('--trigColorAct', 'rgb(255, 208, 122)');
+  document.documentElement.style.setProperty('--trigColorInact', 'rgba(255, 255, 255, 0.514)');
+  document.documentElement.style.setProperty('--dropMenuBg', 'rgba(90, 76, 139, 0.986)');
+  document.documentElement.style.setProperty('--scrollColor', 'rgba(255, 255, 255, 0.432)');
+  
   const [expression, setExpression] = useState('');
 
   const ops = ['/', '*', '+', '-', '.'];
@@ -55,7 +71,6 @@ function Bts1() {
         .join('')
     );
   }
-
 
   return (
     <div className="App d-grid">
@@ -155,4 +170,3 @@ function Bts1() {
   );
 }
 
-export default Bts1;

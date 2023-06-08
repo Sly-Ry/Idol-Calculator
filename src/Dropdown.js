@@ -1,4 +1,5 @@
 import { useEffect, useState, useRef } from "react";
+import { Link } from "react-router-dom";
 
 function Dropdown() {
 
@@ -29,8 +30,9 @@ function Dropdown() {
             
                 <div className={`drop-menu ${open? 'active' : 'inactive'}`}>
                     <ul>
-                        <DropdownItem text={"BTS"}/>
-                        <DropdownItem text={"TWICE"}/>
+                        <Link to="/Idol-Calculator" className="text-link"><DropdownItem text={"HOME"}/></Link>
+                        <Link to="/Idol-Calculator/bts" className="text-link"><DropdownItem text={"BTS"}/></Link>
+                        {/* <Link to="/Idol-Calculator/twice" className="text-link"><DropdownItem text={"TWICE"}/></Link> */}
                     </ul>
                 </div>
             </div>

@@ -1,19 +1,17 @@
 :root {
-    --bodyBackground: rgb(255, 255, 255);
-    --bg-top: rgb(172, 172, 172);
-    --bg-bottom: rgb(255, 255, 255);
-    --color1: rgb(255, 255, 255);
-    --color2: rgb(99, 99, 99);
-    --color3: rgb(56, 56, 56);
-    --borderColor: rgba(0, 0, 0, 0.336);
-    --calculatorColor: rgba(73, 73, 73, 0.55);
-    --screenColor: rgba(0, 0, 0, 0.76);
-    --numberColor: rgb(255, 255, 255);
-    --btn-color: rgb(139, 203, 228);
-    --equationColor: rgba(0, 0, 0, 0.55);
-    --cacColor: rgba(49, 49, 49, 0.418);
-    --trigColorAct: rgb(0, 0, 0);
-    --trigColorInact: rgb(145, 124, 6);
-    --dropMenuBg: rgba(209, 209, 209, 0.986);
-    --scrollColor: rgba(5, 70, 16, 0.432);
-  }
+  --bg-top: rgb(172, 172, 172);
+  --bg-bottom: rgb(255, 255, 255);
+  --outputColor: rgb(255, 255, 255);
+  --barColor: rgb(99, 99, 99);
+  --calculatorColor: rgba(73, 73, 73, 0.55);
+  --screenColor: rgba(0, 0, 0, 0.76);
+  --numberColor: rgb(255, 255, 255);
+  --btn-color: rgb(139, 203, 228);
+  --equationColor: rgba(0, 0, 0, 0.55);
+  --cacColor: rgba(49, 49, 49, 0.418);
+  --cacHoverColor: rgb(56, 56, 56);
+  --trigColorAct: rgb(0, 0, 0);
+  --trigColorInact: rgb(145, 124, 6);
+  --dropMenuBg: rgba(209, 209, 209, 0.986);
+  --scrollColor: rgba(5, 70, 16, 0.432);
+}

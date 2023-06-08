@@ -1,20 +1,5 @@
 :root {
-  --bg-top: rgb(172, 172, 172);
-  --bg-bottom: rgb(255, 255, 255);
-  --outputColor: rgb(255, 255, 255);
-  --barColor: rgb(99, 99, 99);
   --borderColor: rgba(0, 0, 0, 0.336);
-  --calculatorColor: rgba(73, 73, 73, 0.55);
-  --screenColor: rgba(0, 0, 0, 0.76);
-  --numberColor: rgb(255, 255, 255);
-  --btn-color: rgb(139, 203, 228);
-  --equationColor: rgba(0, 0, 0, 0.55);
-  --cacColor: rgba(49, 49, 49, 0.418);
-  --cacHoverColor: rgb(56, 56, 56);
-  --trigColorAct: rgb(0, 0, 0);
-  --trigColorInact: rgb(145, 124, 6);
-  --dropMenuBg: rgba(209, 209, 209, 0.986);
-  --scrollColor: rgba(5, 70, 16, 0.432);
 }
 
 body {
@@ -30,26 +15,36 @@ body {
 
 .App {
   margin: auto;
+  padding-bottom: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
   overflow: hidden;
 }
 
-.App .bg-img {
+#logo {
   position: absolute;
   width: 100%;
   max-width: 500px;
   height: 100%;
   right: 5px;
   bottom: 0px;
-  opacity: .32;
   z-index: -1;
   overflow: hidden;
+  animation: fadeInAnimation ease 7s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
 }
 
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: .4;
+  }
+}
 .calculator {
-  /* border: 10px solid var(--borderColor); */
   margin: auto;
   background-color: var(--calculatorColor); 
   border-radius: 20px;

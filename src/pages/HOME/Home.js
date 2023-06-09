@@ -1,23 +1,24 @@
 import { useState } from 'react';
+import { themes } from '../../colors';
 import AnimatedPage from '../../AnimatedPage';
 
 export function Home() {
 
-  document.documentElement.style.setProperty('--bg-top', 'rgb(172, 172, 172)');
-  document.documentElement.style.setProperty('--bg-bottom', 'rgb(255, 255, 255)');
-  document.documentElement.style.setProperty('--outputColor', 'rgb(255, 255, 255)');
-  document.documentElement.style.setProperty('--barColor', 'rgb(99, 99, 99)');
-  document.documentElement.style.setProperty('--calculatorColor', 'rgba(73, 73, 73, 0.55)');
-  document.documentElement.style.setProperty('--screenColor', 'rgba(0, 0, 0, 0.76)');
-  document.documentElement.style.setProperty('--numberColor', 'rgb(255, 255, 255)');
-  document.documentElement.style.setProperty('--btn-color', 'rgba(139, 203, 228)');
-  document.documentElement.style.setProperty('--equationColor', 'rgba(0, 0, 0, 0.55)');
-  document.documentElement.style.setProperty('--cacColor', 'rgba(49, 49, 49, 0.418)');
-  document.documentElement.style.setProperty('--cacHoverColor', 'rgb(56, 56, 56)');
-  document.documentElement.style.setProperty('--trigColorAct', 'rgb(0, 0, 0)');
-  document.documentElement.style.setProperty('--trigColorInact', 'rgba(145, 124, 6)');
-  document.documentElement.style.setProperty('--dropMenuBg', 'rgba(209, 209, 209, 0.986)');
-  document.documentElement.style.setProperty('--scrollColor', 'rgba(5, 70, 16, 0.432)');
+  document.documentElement.style.setProperty('--bg-top', themes.home.color1);
+  document.documentElement.style.setProperty('--bg-bottom', themes.home.color2);
+  document.documentElement.style.setProperty('--outputColor', themes.home.color3);
+  document.documentElement.style.setProperty('--barColor', themes.home.color4     );
+  document.documentElement.style.setProperty('--calculatorColor', themes.home.color5);
+  document.documentElement.style.setProperty('--screenColor', themes.home.color6);
+  document.documentElement.style.setProperty('--numberColor', themes.home.color7);
+  document.documentElement.style.setProperty('--btn-color', themes.home.color8);
+  document.documentElement.style.setProperty('--equationColor', themes.home.color9);
+  document.documentElement.style.setProperty('--cacColor', themes.home.color10);
+  document.documentElement.style.setProperty('--cacHoverColor', themes.home.color11);
+  document.documentElement.style.setProperty('--trigColorAct', themes.home.color12);     
+  document.documentElement.style.setProperty('--trigColorInact', themes.home.color13);
+  document.documentElement.style.setProperty('--dropMenuBg', themes.home.color14);
+  document.documentElement.style.setProperty('--scrollColor', themes.home.color15);
 
   const [expression, setExpression] = useState('');
 

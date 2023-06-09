@@ -1,0 +1,37 @@
+export const themes = {
+    home: {
+        color1: 'rgb(172, 172, 172)',
+        color2: 'rgb(255, 255, 255)',
+        color3: 'rgb(255, 255, 255)',
+        color4: 'rgb(99, 99, 99)',
+        color5: 'rgba(73, 73, 73, 0.55)',
+        color6: 'rgba(0, 0, 0, 0.76)',
+        color7: 'rgb(255, 255, 255)',
+        color8: 'rgba(139, 203, 228)',
+        color9: 'rgba(0, 0, 0, 0.55)',
+        color10: 'rgba(49, 49, 49, 0.418)',
+        color11: 'rgb(56, 56, 56)',
+        color12: 'rgb(0, 0, 0)',
+        color13: 'rgba(145, 124, 6)',
+        color14: 'rgba(209, 209, 209, 0.986)',
+        color15: 'rgba(5, 70, 16, 0.432)',
+    },
+    bts1: {
+        color1: 'rgb(124, 77, 255)',
+        color2: 'rgb(204, 156, 172)',
+        color3: 'rgb(228, 139, 174)',
+        color4: 'rgb(149, 117, 205)',
+        color5: 'rgba(17, 0, 80, 0.55)',
+        color6: 'rgba(0, 0, 0, 0.76)',
+        color7: 'rgba(255, 255, 255, 0.623)',
+        color8: 'rgba(228, 139, 175)',
+        color9: 'rgba(0, 0, 0, 0.55)',
+        color10: 'rgba(209, 196, 233, 0.418)',
+        color11: 'rgb(209, 196, 233)',
+        color12: 'rgb(255, 208, 122)',
+        color13: 'rgba(255, 255, 255, 0.514)',
+        color14: 'rgba(90, 76, 139, 0.986)',
+        color15: 'rgba(255, 255, 255, 0.432)',
+        
+    }
+}

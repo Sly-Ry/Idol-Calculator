@@ -44,6 +44,7 @@ body {
     opacity: .4;
   }
 }
+
 .calculator {
   margin: auto;
   background-color: var(--calculatorColor); 
@@ -193,7 +194,6 @@ p {
 
 .drop-menu ul li:hover p{
   color: var(--trigColorAct);
-  font-size: 23px;
   font-weight: bold;
   cursor: pointer
 }

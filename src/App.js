@@ -4,9 +4,9 @@ import { Home } from "./pages/HOME/Home";
 
 function App() {
     return (
-        <Routes>
-            <Route path="/Idol-Calculator/" element={<Home />} />
-            <Route path="/Idol-Calculator/bts" element={<Bts1 />} />
+        <Routes basename='/Idol-Calculator' >
+            <Route exact path="/Idol-Calculator" element={<Home />} />
+            <Route exact path="/Idol-Calculator/bts" element={<Bts1 />} />
         </Routes>
     )
 }
